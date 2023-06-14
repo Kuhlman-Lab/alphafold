@@ -479,7 +479,7 @@ def getCustomMSADict(custom_msa_path: str) -> Dict[str, str]:
                         else:
                             continue
 
-                    if len(line) > 0:
+                    if len(line) > 0 and len(custom_msa_dict) != 0:
                         custom_msa_dict[seq].append(line)
     
     for seq in custom_msa_dict:
